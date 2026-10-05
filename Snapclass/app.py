@@ -7,7 +7,7 @@ from src.components.dialog_auto_enroll import auto_enroll_dialog
 
 
 def main():
-    # Must be the first Streamlit call
+
     st.set_page_config(
         page_title="SnapClass - Making Attendance faster using AI",
         page_icon="https://i.ibb.co/YTYGn5qV/logo.png",
@@ -16,7 +16,6 @@ def main():
     if "login_type" not in st.session_state:
         st.session_state["login_type"] = None
 
-    # Handle join links BEFORE rendering any screen
     join_code = st.query_params.get("join-code")
     if join_code and st.session_state.login_type != "student":
         st.session_state.login_type = "student"
@@ -30,7 +29,6 @@ def main():
         case _:
             home_screen()
 
-    # Auto-enroll once the student is logged in
     if (
         join_code
         and st.session_state.get("is_logged_in")
