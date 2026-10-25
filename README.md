@@ -16,3 +16,18 @@ Easy class creation and management
 Fast and lightweight performance
 Deployed and accessible online via Render
 (Add your own features here)
+
+✨ Features
+Clean, responsive user interface
+Easy class creation and management
+Fast and lightweight performance
+Deployed and accessible online via Render
+(Add your own features here)
+
+
+🛠️ Tech Stack
+Layer	Technology
+Frontend-	HTML, CSS, JavaScript (edit me)
+Backend -	Node.js / Express (edit me)
+Database -	Supabase (PostgreSQL)
+Hosting -	Render
